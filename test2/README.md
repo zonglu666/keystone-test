@@ -16,7 +16,7 @@
 
 - 输入查询
 
-```json
+```
 query{
   products{
     products{
