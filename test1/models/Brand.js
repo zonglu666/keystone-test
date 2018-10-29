@@ -15,5 +15,11 @@ Brand.add({
 	chineseName: { type: String },
 });
 
+/**
+ * Relationships
+ */
+Brand.relationship({ ref: 'Product', path: 'products', refPath: 'brand' });
+
+
 Brand.defaultColumns = 'englishName, chineseName';
 Brand.register();
