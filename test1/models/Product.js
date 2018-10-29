@@ -16,10 +16,11 @@ Product.add({
 			{value:'draft', label:'草稿'},
 			{value:'prepared', label:'准备完毕'},
 			{value:'sold', label:'已出售'}],
-		default: 'draft'
+		default: 'draft',
+		required: true, initial: true
 	},
-	price: { type: Number },
-	brand: { type: Types.Relationship, ref: 'Brand' },
+	price: { type: Number, required: true, initial: true },
+	brand: { type: Types.Relationship, ref: 'Brand', required: true, initial: true },
 });
 
 Product.defaultColumns = 'name, status, price, brand';
