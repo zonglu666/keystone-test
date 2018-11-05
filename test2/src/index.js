@@ -3,7 +3,6 @@ import { ApolloServer } from 'apollo-server';
 import globalResolvers from './graphql/GlobalResolvers';
 import globalQuery from './graphql/TypeDefinitions';
 import { connectDatabase } from './database';
-// import { getUser } from './graphql/auth';
 
 (async () => {
   try {
